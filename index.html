@@ -1,0 +1,23 @@
+<!doctype>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>D3 page template</title>
+      <script type="text/javascript" src="d3.js">
+      </script>
+      </head>
+      <body>
+      <script type="text/javascript">
+          //3D code goes here
+          var animals = ["cat", "dog", "wolf", "bear", "mouse"];
+
+          var ul = d3.select('body').append('ul');
+
+          ul.selectAll('li')
+          .data(animals)
+          .enter()
+          .append('li')
+          .html(String);
+      </script>
+      </body>
+  </html>
